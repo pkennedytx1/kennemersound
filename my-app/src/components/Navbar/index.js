@@ -1,11 +1,12 @@
 import React from 'react';
+import { MDBScrollspyBox, MDBScrollspyList, MDBScrollspyListItem, MDBScrollspyText, MDBTabContent } from "mdbreact";
 import './style.css';
 
 class Navbar extends React.Component {
+    
     render() {
         return(
-            <div>
-              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -15,7 +16,7 @@ class Navbar extends React.Component {
                 
                 <ul class="nav nav-pills mx-auto">
                     <li className="nav-item">
-                    <a className="nav-link active" href="#!">Reel<span class="sr-only">(current)</span></a>
+                    <a className="nav-link" href="#Reel">Reel</a>
                     </li>
                     <li className="nav-item">
                     <a className="nav-link" href="#!">Projects</a>
@@ -32,8 +33,7 @@ class Navbar extends React.Component {
                 </ul>
                 
                 </div>
-                </nav>
-            </div>
+            </nav>
         )
     }
 }
