@@ -6,7 +6,7 @@ import "./style.css"
 class Landing extends React.Component {
     render() {
         return(
-            <div className="bg-primary text-white" style={{minHeight: '750px'}}>
+            <div className="text-white" style={{minHeight: '750px', backgroundColor:'black'}}>
                 <ScrollAnimation animateOnce={true} duration={3} delay={1100} animateIn="fadeIn">
                     <h1 style={{textAlign: "center"}}><img style={{margin: '40px'}}src="images/J!Logo.png" /></h1>
                 </ScrollAnimation>

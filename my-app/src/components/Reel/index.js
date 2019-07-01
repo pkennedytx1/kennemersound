@@ -13,8 +13,8 @@ class Reel extends React.Component {
 
     render() {
         return(
-            <div className='reelcontainer' style={{height: '900px', padding: '30px', backgroundColor: this.state.bgColor}}>
-                <h1 id='Reel' className='text-center'>Reel</h1>
+            <div className='reelcontainer' style={{height: 'auto', padding: '30px', backgroundColor: this.state.bgColor}}>
+                <h1 style={{color: 'black'}} id='Reel' className='text-center'>Reel</h1>
                 <div className='player-wrapper'>
                     <ReactPlayer
                         className='react-player'
