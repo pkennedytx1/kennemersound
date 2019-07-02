@@ -1,5 +1,24 @@
 .card {
-    border: none
+    border: none;
+}
+
+.card-img {
+    transform: scale(1.03);
+}
+
+.imagetxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 42px;
+    transition: 0.5s ease;
+}
+
+.linktxt {
+    font-size: 12px;
 }
 
 @media (min-width: 576px) {
