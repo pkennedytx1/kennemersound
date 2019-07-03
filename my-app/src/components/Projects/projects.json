@@ -2,10 +2,91 @@
     {
         "id": 1,
         "title": "Everything Except Hope 2",
-        "image": "",
+        "image": "hope2.jpg",
         "year": "(2019)",
+        "director": "Nicolas Saenz",
         "role": "Sound Design",
         "summary": "Nicolas Saenz’s feature film debut is a side-splitting mockumentary about a pretentious film student’s existential crises (yes, plural) while making a short film. Working with Nick is always a blast and his film presented a great opportunity to focus on dialogue editing and find ways sound design can add to a genre you might not think sound design has a place in. Some of my favorite work in the film are the sound effects I created for the film’s intertitles, you can hear one of them at the beginning of my reel.",
+        "link": ""
+    },
+    {
+        "id": 2,
+        "title": "Fighting Chance",
+        "image": "fightingchance.png",
+        "year": "(2019)",
+        "director": "Aaron Weiss",
+        "role": "Re-Recording Mixing",
+        "summary": "Fighting Chance is a short film made for the Susan G. Komen foundation, which BL&S provided post-production services for. This project gave me an opportunity to focus on mixing, specifically balancing music with dialogue and how to maintain dynamics with a film that had wall-to-wall music.",
+        "link": ""
+    },
+    {
+        "id": 3,
+        "title": "Soul of the Soil",
+        "image": "whiskeycom.png",
+        "year": "(2019)",
+        "director": "Colton Constanzo",
+        "role": "Sound Design & Re-Recording Mixing",
+        "summary": "My first project with the fine folks at BL&S was a special one. Colton Constanzo wrote and directed a commercial spot with no dialogue, which gave my sound editing work some time in the spotlight and an even greater responsibility to flesh out the world. Creating the reverb for a canyon and finding the right rhythm for ambient material were some of my favorite things I got to do on this project.",
+        "link": ""
+    },
+    {
+        "id": 4,
+        "title": "Other Black Boys",
+        "image": "otherblackboysredo.png",
+        "year": "(2018)",
+        "director": "Nyles Washington",
+        "role": "Sound Design",
+        "summary": "Nyles Washington made his directorial debut with this incredible short film about the day-to-day struggles of Mozzy, a gay, black man. Featuring some of the best acting I’ve seen in a short and the beautiful cinematography of Zach Morrison, I was quite fortunate to be the one Nyles turned to for dialogue editing and sound design. The film had some very quiet, intimate moments which gave me the opportunity to add subtle foley you might not usually hear in a film.",
+        "link": ""
+    },
+    {
+        "id": 5,
+        "title": "Farsight",
+        "image": "Farsight Dir. Jackson Lowen.png",
+        "year": "(2018)",
+        "director": "Jackson Lowen",
+        "role": "Sound Design & Re-Recording Mixing",
+        "summary": "Jackson Lowen is a young director whom any fan of sci-fi would do well to keep an eye on. Farsight was an immersive, compelling story of a girl developing a psychic ability that would be a perfect cold open for an X-Files episode. The film had a myriad of sound design opportunities, my favorite of which being the sound of a psychic crystal which I created by recording dialogue from the film off a loudspeaker, played that recording off a loudspeaker, and so on, until the generation loss of these recordings made the dialogue sound ethereal. I got the idea from Alvin Lucier’s album, I am sitting in a room. Go check it out!",
+        "link": ""
+    },
+    {
+        "id": 6,
+        "title": "Blue Sunday",
+        "image": "bluesunday.jpg",
+        "year": "(2018)",
+        "director": "Allison Webster",
+        "role": "Sound Design & Re-Recording Mixing",
+        "summary": "Allison’s vision for a story about an adolescent girl discovering her sexuality while involved in the church was singular and daring. There were some great moments for sound design, my favorite being a scene in which the heroine is looking through a playboy magazine. I didn’t want this moment to feel taboo, but innocent, so I added the sounds of children playing outside. It was a subtle addition with a palpable effect.",
+        "link": ""
+    },
+    {
+        "id": 7,
+        "title": "La Loma del Chivo",
+        "image": "La Loma del Chivo Dir. Alex Winker.png",
+        "year": "(2018)",
+        "director": "Alex Winker",
+        "role": "Re-Recording Mixing",
+        "summary": "Alex Winker came to me needing a basic stereo mix for his little, but lovely, documentary he directed about a few residents of Marfa, Texas. Normalizing the volume of the dialogue, noise reduction, balancing dialogue with music, and a little foley went a long way in bringing the film to life.",
+        "link": ""
+    },
+    {
+        "id": 8,
+        "title": "Mammoth",
+        "image": "Mammoth Dir. Justice Gutierrez.png",
+        "year": "(2018)",
+        "director": "Justice Gutierrez",
+        "role": "Sound Design & Re-Recording Mixing",
+        "summary": "With this project, Justice Gutierrez tells a story about a woman healing from a past trauma in a lonely forest. Mammoth has a unique style of live-action blended with miniatures that was a lot of fun to bring sounds to. One animation sequence involving a jar trapping a spider has some of my favorite work in it.",
+        "link": ""
+    },
+    {
+        "id": 9,
+        "title": "LIVE ACTION - The Adventure Zone Fan Film",
+        "image": "LIVE ACTION - The Adventure Zone Fan Film Dir. Curtis McOsker.png",
+        "year": "(2017)",
+        "director": "Curtis McOsker",
+        "role": "Sound Design & Re-Recording Mixing",
+        "summary": "Right when I decided to start pursuing a career in post-production sound, a golden egg fell in my lap. Curtis McOsker, a local filmmaker and D&D enthusiast had just finished shooting a short fan film about the podcast, The Adventure Zone. Curtis had crafted a hilarious and engaging story that featured dialogue from the podcast and some excellent filmmaking. I couldn’t have asked for a better introduction to what I do and near the end of the short there’s some sound design I’m still proud of.",
         "link": ""
     }
 ]
