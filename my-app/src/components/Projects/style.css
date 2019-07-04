@@ -2,10 +2,6 @@
     border: none;
 }
 
-.card-img {
-    transform: scale(1.03);
-}
-
 .imagetxt {
     position: absolute;
     top: 50%;
