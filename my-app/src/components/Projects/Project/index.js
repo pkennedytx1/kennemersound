@@ -2,7 +2,7 @@ import React from 'react'
 // import Modal from 'react-responsive-modal'
 import styled from "styled-components";
 import Modal, { ModalProvider, BaseModalBackground } from "styled-react-modal"
-
+import './style.css'
 
 const StyledModal = Modal.styled`
 max-width: 800px;
@@ -16,12 +16,12 @@ class Project extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            hover: false,
+            // hover: false,
             // open: false
             isOpen: false,
             opacity: 0
         }
-        this.toggleHover = this.toggleHover.bind(this)
+        // this.toggleHover = this.toggleHover.bind(this)
         // this.onCloseModal = this.onCloseModal.bind(this)
         // this.onOpenModal = this.onOpenModal.bind(this)
         this.toggleModal = this.toggleModal.bind(this);
@@ -57,30 +57,32 @@ class Project extends React.Component {
         });
     }
 
-    toggleHover() {
-        this.setState({hover: !this.state.hover})
-    }
+    // toggleHover() {
+    //     this.setState({hover: !this.state.hover})
+    // }
 
     render() {
 
-        let linkStyle;
-        let photoStyle;
-        // const { open } = this.state;
+        // let linkStyle;
+        // let photoStyle;
+        // // const { open } = this.state;
 
-        if(this.state.hover) {
-            linkStyle = {color: 'white', cursor: 'pointer'}
-            photoStyle = {transition: '0.5s ease', filter: 'blur(3px)', cursor: 'pointer'}
-        } else {
-            linkStyle = {opacity: '0'}
-            photoStyle = {transition: '0.5s ease'}
-        }
+        // if(this.state.hover) {
+        //     linkStyle = {color: 'white', cursor: 'pointer'}
+        //     photoStyle = {transition: '0.5s ease', filter: 'blur(3px)', cursor: 'pointer'}
+        // } else {
+        //     linkStyle = {opacity: '0'}
+        //     photoStyle = {transition: '0.5s ease'}
+        // }
 
         return(
             <div key={this.props.id} onClick={this.toggleModal} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} class="card">
-                <img style={photoStyle} class="card-img img-fluid" src={`images/projects/${this.props.image}`} alt="Card image cap"/>
-                <div style={linkStyle} class="imagetxt">
+                <div className='borderline'>
+                <img style={{}} class="card-img img-fluid" src={`images/projects/${this.props.image}`} alt="Card image cap"/>
+                <div style={{}} class="imagetxt">
                     <p class='imagetitle'>{this.props.title}</p>
                     <p class='linktxt'>Click for Project Details</p>
+                </div>
                 </div>
                 <ModalProvider backgroundComponent={FadingBackground}>
                     <StyledModal
