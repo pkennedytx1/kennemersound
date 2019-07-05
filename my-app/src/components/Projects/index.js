@@ -46,6 +46,7 @@ class Projects extends React.Component {
                             role={projects.role}
                             summary={projects.summary}
                             link={projects.link}
+                            href={projects.href}
                         />
                     ))}
                 </div>
