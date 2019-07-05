@@ -11,18 +11,10 @@
     border-radius: 0;
 }
 
-.card-img:hover {
-    -webkit-filter: brightness(40%);
-    -webkit-transition: all 0.6s ease;
-    -moz-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    -ms-transition: all 0.6s ease;
-    transition: all 0.6s ease;
-}
-
 .card {
     border-radius: 0;
-    margin: 4px;
+    margin: 0;
+    padding: 0;
 }
 .borderline {
     background-color: black;
@@ -53,5 +45,5 @@
 .imagetxt:hover {
     color: white;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.418)
+    background-color: rgba(0, 0, 0, 0.219);
 }
