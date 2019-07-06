@@ -5,6 +5,7 @@ import Landing from './components/Landing'
 import Reel from './components/Reel'
 import Projects from './components/Projects'
 import Aboutme from './components/Aboutme'
+import Testimonials from './components/Testimonials'
 
 import './App.css';
 
@@ -16,7 +17,8 @@ function App() {
         <Landing />
         <Reel id='Reel'/>
         <Projects id='Projects'/>
-        <Aboutme />
+        <Aboutme id='Aboutme'/>
+        <Testimonials id='Testimonials'/>
         
     </div>
   );
