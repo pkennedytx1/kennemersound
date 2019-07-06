@@ -4,9 +4,9 @@ class Aboutme extends React.Component {
     render() {
         return(
             <div className='container'>
-                <h1>About Me</h1>
+                <h1 style={{fontWeight:'bold', margin: '30px auto 30px auto'}}>About Me</h1>
                 <img style={{width: '100%'}} src='images/joe.jpg' alt='joe self shot'/>
-                <p style={{fontWeight: 'bold'}}>
+                <p style={{fontWeight: 'bold', margin: '30px auto 30px auto', maxWidth: '860px'}}>
                 Sound is the puppet master of emotion. Let’s make your audience feel your story. 
                 <br/><br/>
                 If you’re an independent filmmaker or a web video producer and need industry standard audio repair, sound effects that tell a story, or just need your project to sound cinematic, you’re in the right place. No matter what you have on your hands, I’ll make sure it sounds its absolute best.
