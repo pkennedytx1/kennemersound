@@ -6,6 +6,7 @@ import Reel from './components/Reel'
 import Projects from './components/Projects'
 import Aboutme from './components/Aboutme'
 import Testimonials from './components/Testimonials'
+import Contact from './components/Contact'
 
 import './App.css';
 
@@ -19,6 +20,7 @@ function App() {
         <Projects id='Projects'/>
         <Aboutme id='Aboutme'/>
         <Testimonials id='Testimonials'/>
+        <Contact id='Contact'/>
         
     </div>
   );
