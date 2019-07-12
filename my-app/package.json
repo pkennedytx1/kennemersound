@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "animate.css": "^3.7.2",
+    "email-validator": "^2.0.4",
     "mdbreact": "^4.17.0",
     "react": "^16.8.6",
     "react-animate-on-scroll": "^2.1.5",

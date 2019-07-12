@@ -1,4 +1,5 @@
 import React from 'react'
+import * as EmailValidator from 'email-validator'
 
 class Contact extends React.Component {
     constructor(props) {
@@ -33,6 +34,16 @@ class Contact extends React.Component {
         this.setState({
             emailInput: e.target.value
         })
+        if( EmailValidator.validate(`${this.state.emailInput}`)) {
+            this.setState({
+                email: 'form-control is-valid'
+            })
+            console.log('hello')
+        } else {
+            this.setState({
+                email: 'form-control is-invalid'
+            })
+        }
     }
 
     render() {
@@ -70,7 +81,7 @@ class Contact extends React.Component {
                             <div style={{width: '100%', float: 'right', padding: '0 30px 30px 30px'}} class="form-group has-successs">
                                 <input style={{borderRadius: '0', backgroundColor: 'black'}} 
                                 type="email" 
-                                class="form-control" 
+                                class={this.state.email} 
                                 id="exampleInputEmail1" 
                                 aria-describedby="emailHelp" 
                                 placeholder="Enter Email"
