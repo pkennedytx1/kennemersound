@@ -34,7 +34,12 @@ class Contact extends React.Component {
         this.setState({
             emailInput: e.target.value
         })
-        if( EmailValidator.validate(`${this.state.emailInput}`)) {
+        console.log(this.state.emailInput.length)
+        if( this.state.emailInput.length < 2 ) {
+            this.setState({
+                email: 'form-control'
+            })
+        } else if( EmailValidator.validate(`${this.state.emailInput}`)) {
             this.setState({
                 email: 'form-control is-valid'
             })
@@ -44,6 +49,25 @@ class Contact extends React.Component {
                 email: 'form-control is-invalid'
             })
         }
+    }
+
+    inputMessageChange = e => {
+        this.setState({
+            messageInput: e.target.value
+        })
+        if( this.state.messageInput.length > 2 ) {
+            this.setState({
+                message: 'form-control is-valid'
+            })
+        } else {
+            this.setState({
+                message: 'form-control'
+            })
+        }
+    }
+
+    onSumbit = e => {
+        console.log('entered')
     }
 
     render() {
@@ -66,6 +90,7 @@ class Contact extends React.Component {
                                 </div>
                             </div>
                         </div>
+                        <form action="https://formspree.io/email@domain.tld" method="POST">
                         <div style={{backgroundColor: 'black', width:'50%', zIndex: '1', position: 'relative', height: '400px', float: 'left'}} className='contactleft'>
                             <h3 style={{color: 'white', fontWeight: 'bold', padding: '20px 30px 0 30px'}}>Send Me a Message.</h3>
                             <div style={{width: '100%', float: 'right', padding: '30px'}} class='form-group'>
@@ -75,6 +100,7 @@ class Contact extends React.Component {
                                 id="exampleInputName1" 
                                 aria-describedby="nameHelp" 
                                 placeholder="Enter Name"
+                                name='name'
                                 value={this.state.nameInput}
                                 onChange={this.inputNameChange} />
                             </div>
@@ -85,13 +111,24 @@ class Contact extends React.Component {
                                 id="exampleInputEmail1" 
                                 aria-describedby="emailHelp" 
                                 placeholder="Enter Email"
+                                name='_replyto'
                                 value={this.state.emailInput}
                                 onChange={this.inputEmailChange} />
+                            </div>
+                            <div style={{padding: '0 30px 30px 30px'}} class="form-group">
+                                <textarea style={{borderRadius: '0', backgroundColor: 'black'}} 
+                                class={this.state.message}
+                                id="exampleTextarea" 
+                                rows="3"
+                                placeholder="Enter Message"
+                                value={this.state.messageInput}
+                                onChange={this.inputMessageChange}></textarea>
                             </div>
                             <button type="button" 
                             class="btn btn-outline-secondary"
                             onClick={this.onSumbit}>Send Message</button>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
