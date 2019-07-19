@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollAnimation from 'react-animate-on-scroll'
 import * as EmailValidator from 'email-validator'
 
 class Contact extends React.Component {
@@ -76,6 +77,7 @@ class Contact extends React.Component {
         }
         return(
             <div>
+                <ScrollAnimation animateOnce={true} duration={2} delay={500} animateIn="fadeIn">
                 <div className='container'>
                     <div style={{position: 'relative', margin: '100px 0 0 0'}} className='contactcard'>
                     <h1 style={{position:'absolute', top: '-68px', left: '-10px', fontWeight: 'bold', fontSize: '75px', zIndex: '2'}}>Lets Get In Touch.</h1>
@@ -150,6 +152,7 @@ class Contact extends React.Component {
                         </form>
                     </div>
                 </div>
+                </ScrollAnimation>
             </div>
         )
     }
