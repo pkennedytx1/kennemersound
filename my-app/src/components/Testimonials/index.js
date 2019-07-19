@@ -1,12 +1,82 @@
 import React from 'react'
+import Plx from 'react-plx'
 import './style.css'
 
 class Testimonials extends React.Component {
     render() {
+
+        const parallaxData = [
+            {
+              start: "self",
+              startOffset: "10vw",
+              end: "self",
+              endOffset: "50vh",
+              easing: "easeInSine",
+              properties: [
+                  {
+                      startValue: 1,
+                      endValue: 1.4,
+                      property: "scale",
+                      unit: ""
+                    },
+                    {
+                      startValue: "#000000",
+                      endValue: "#00ffc0",
+                      property: "borderColor",
+                      unit: ""
+                    },
+                    {
+                      startValue: "#000000",
+                      endValue: "#f8fffe",
+                      property: "color",
+                      unit: ""
+                    }
+                ]
+            },
+            {
+              start: "self",
+              startOffset: "60vh",
+              end: "self",
+              endOffset: "100vh",
+              easing: "easeInSine",
+              properties: [
+                  {
+                      startValue: 1.4,
+                      endValue: 1,
+                      property: "scale",
+                      unit: ""
+                    },
+                    {
+                      startValue: "#00ffc0",
+                      endValue: "#000000",
+                      property: "borderColor",
+                      unit: ""
+                    },
+                    {
+                      startValue: "#f8fffe",
+                      endValue: "#000000",
+                      property: "color",
+                      unit: ""
+                    }
+              ]
+            }
+          ];
+          
         return(
             <div style={{backgroundColor: 'black', padding: '60px 0 100px 0'}}>
                 <div className='container'>
-                    <h1 style={{color: 'white', padding: '30px', textAlign: 'center'}}>Testimonials</h1>
+                    <Plx
+                    parallaxData={parallaxData}
+                    style={{
+                    height: "auto",
+                    width: "20vw",
+                    margin: "auto",
+                    border: "2px solid black"
+                    }}
+                    >
+                    {/* Place your content here */}
+                        <h1 style={{color: 'white', padding: '0px', textAlign: 'center'}}>Testimonials</h1>
+                    </Plx>
                     <p className='testbox'>
                     “A lot of people see talent and friendliness as a choice to make, but working with Joseph is so easy. He immediately showed an understanding of both the story and emotion of my film and brought ideas to the table that demonstrated that exceedingly well. He takes notes incredibly well, in high spirits, and it felt more like working “with” someone than “at” someone. His enthusiasm for film and his work is infectious and makes you excited about even the tiniest nuances of sound and cinema. Joseph is an absolute pleasure to work with." 
                     <br /><br />

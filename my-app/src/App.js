@@ -1,6 +1,6 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Logo from './components/Logo';
+import React from 'react'
+import Navbar from './components/Navbar'
+import Logo from './components/Logo'
 import Landing from './components/Landing'
 import Reel from './components/Reel'
 import Projects from './components/Projects'
@@ -15,13 +15,12 @@ function App() {
     <div>
         <Logo />
         <Navbar />
-        <Landing />
-        <Reel id='Reel'/>
-        <Projects id='Projects'/>
-        <Aboutme id='Aboutme'/>
-        <Testimonials id='Testimonials'/>
-        <Contact id='Contact'/>
-        
+          <Landing />
+          <Reel id='Reel'/>
+          <Projects id='Projects'/>
+          <Aboutme id='Aboutme'/>
+          <Testimonials id='Testimonials'/>
+          <Contact id='Contact'/>
     </div>
   );
 }
