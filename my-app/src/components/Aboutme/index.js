@@ -1,11 +1,65 @@
 import React from 'react'
+import Plx from 'react-plx'
 
 class Aboutme extends React.Component {
     render() {
+
+        const parallaxData = [
+            {
+              start: "self",
+              startOffset: "10vw",
+              end: "self",
+              endOffset: "50vh",
+              easing: "easeInSine",
+              properties: [
+                  {
+                      startValue: 1,
+                      endValue: 1.5,
+                      property: "scale",
+                      unit: ""
+                    }
+                ]
+            }
+          ];
+        
+          const parallaxDataA = [
+            {
+              start: "self",
+              startOffset: "10vw",
+              end: "self",
+              endOffset: "50vh",
+              easing: "easeInSine",
+              properties: [
+                  {
+                      startValue: 0.2,
+                      endValue: 1,
+                      property: "opacity",
+                      unit: ""
+                    }
+                ]
+            }
+          ];
+
         return(
-            <div className='container'>
-                <h1 style={{fontWeight:'bold', margin: '30px auto 30px auto'}}>About Me</h1>
+            <div style={{padding: '60px 0 60px 0'}} className='container'>
+                <Plx
+                    parallaxData={parallaxData}
+                    style={{
+                        margin: '0 0 30px 0'
+                    }}
+                    >
+                    {/* Place your content here */}
+                    <h1 style={{textAlign: 'center', fontWeight:'bold', margin: '30px auto 30px auto'}}>About Me</h1>
+                </Plx>
+                <Plx
+                parallaxData={parallaxDataA}
+                style={{
+                
+                }}
+                >
+                {/* Place your content here */}
                 <img style={{width: '100%'}} src='images/joe.jpg' alt='joe self shot'/>
+                </Plx>
                 <p style={{fontWeight: 'bold', margin: '30px auto 30px auto', maxWidth: '860px'}}>
                 Sound is the puppet master of emotion. Let’s make your audience feel your story. 
                 <br/><br/>
