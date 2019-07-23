@@ -3,26 +3,26 @@ import Plx from 'react-plx'
 
 class Aboutme extends React.Component {
     render() {
-
-        const parallaxData = [
+        
+          const parallaxDataA = [
             {
-              start: "self",
-              startOffset: "10vw",
-              end: "self",
-              endOffset: "50vh",
-              easing: "easeInSine",
-              properties: [
-                  {
-                      startValue: 1,
-                      endValue: 1.5,
-                      property: "scale",
-                      unit: ""
+                start: "self",
+                startOffset: "0vh",
+                end: "self",
+                endOffset: "60vh",
+                easing: "easeInSine",
+                properties: [
+                    {
+                        startValue: 1,
+                        endValue: 0,
+                        property: "grayscale",
+                        unit: ""
                     }
                 ]
             }
           ];
-        
-          const parallaxDataA = [
+
+          const parallaxDataB = [
             {
               start: "self",
               startOffset: "10vw",
@@ -30,10 +30,11 @@ class Aboutme extends React.Component {
               endOffset: "50vh",
               easing: "easeInSine",
               properties: [
-                  {
-                      startValue: 0.2,
-                      endValue: 1,
-                      property: "opacity",
+                  
+                    {
+                      startValue: "#ffffff",
+                      endValue: "#000000",
+                      property: "color",
                       unit: ""
                     }
                 ]
@@ -43,7 +44,7 @@ class Aboutme extends React.Component {
         return(
             <div style={{padding: '60px 0 60px 0'}} className='container'>
                 <Plx
-                    parallaxData={parallaxData}
+                    parallaxData={parallaxDataB}
                     style={{
                         margin: '0 0 30px 0'
                     }}
@@ -60,17 +61,25 @@ class Aboutme extends React.Component {
                 {/* Place your content here */}
                 <img style={{width: '100%'}} src='images/joe.jpg' alt='joe self shot'/>
                 </Plx>
-                <p style={{fontWeight: 'bold', margin: '30px auto 30px auto', maxWidth: '860px'}}>
-                Sound is the puppet master of emotion. Let’s make your audience feel your story. 
-                <br/><br/>
-                If you’re an independent filmmaker or a web video producer and need industry standard audio repair, sound effects that tell a story, or just need your project to sound cinematic, you’re in the right place. No matter what you have on your hands, I’ll make sure it sounds its absolute best.
-                <br/><br/>
-                I began working with sound in film at The University of Texas at Austin and have been fortunate to work on all kinds of projects since, from short documentaries to feature films, as a dialogue editor, sound designer, and re-recording mixer.
-                <br/><br/>
-                Since I was a child, movies have been at the forefront of my imagination. Soon after making films of my own, the power and mystery of sound in storytelling gripped me, propelling me into film sound. If I’m not re-watching Paul Thomas Anderson’s filmography, listening to the Allman brothers, or enjoying the great state of Texas, I’m probably manipulating recordings of baby tigers to create the sound of Cthulhu.
-                <br/><br/>
-                So let’s work together on your project! Whether it’s a feature film destined for festivals or a D&D podcast fan film that’ll make waves online, together, we’ll make it sound perfect. 
-                </p>
+                <Plx
+                    parallaxData={parallaxDataB}
+                    style={{
+                    
+                    }}
+                >
+                    {/* Place your content here */}
+                    <p style={{fontWeight: 'bold', margin: '30px auto 30px auto', maxWidth: '860px'}}>
+                    Sound is the puppet master of emotion. Let’s make your audience feel your story. 
+                    <br/><br/>
+                    If you’re an independent filmmaker or a web video producer and need industry standard audio repair, sound effects that tell a story, or just need your project to sound cinematic, you’re in the right place. No matter what you have on your hands, I’ll make sure it sounds its absolute best.
+                    <br/><br/>
+                    I began working with sound in film at The University of Texas at Austin and have been fortunate to work on all kinds of projects since, from short documentaries to feature films, as a dialogue editor, sound designer, and re-recording mixer.
+                    <br/><br/>
+                    Since I was a child, movies have been at the forefront of my imagination. Soon after making films of my own, the power and mystery of sound in storytelling gripped me, propelling me into film sound. If I’m not re-watching Paul Thomas Anderson’s filmography, listening to the Allman brothers, or enjoying the great state of Texas, I’m probably manipulating recordings of baby tigers to create the sound of Cthulhu.
+                    <br/><br/>
+                    So let’s work together on your project! Whether it’s a feature film destined for festivals or a D&D podcast fan film that’ll make waves online, together, we’ll make it sound perfect. 
+                    </p>
+                </Plx>
             </div>
         )
     }
