@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Aboutme from './components/Aboutme'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
+import ProgressBar from "react-scroll-progress-bar"
 
 import './App.css';
 
