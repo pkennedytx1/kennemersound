@@ -48,7 +48,7 @@ class Project extends React.Component {
         return(
             <div key={this.props.id} onClick={this.toggleModal} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} class="card">
                 <div className='borderline'>
-                <img style={{}} class="card-img img-fluid" src={`images/projects/${this.props.image}`} alt="Card image cap"/>
+                <img style={{}} class="card-img img-fluid" src={`../images/projects/${this.props.image}`} alt="Card image cap"/>
                 <div style={{padding: '8px 0 0 20px'}} class="imagetxt">
                     <p class='imagetitle'>{this.props.title}</p>
                     <p class='linktxt'>Click for Project Details</p>

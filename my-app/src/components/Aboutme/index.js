@@ -59,7 +59,7 @@ class Aboutme extends React.Component {
                 }}
                 >
                 {/* Place your content here */}
-                <img style={{width: '100%'}} src='images/joe.jpg' alt='joe self shot'/>
+                <img style={{width: '100%'}} src='../images/joe.jpg' alt='joe self shot'/>
                 </Plx>
                 <Plx
                     parallaxData={parallaxDataB}
