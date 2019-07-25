@@ -8,7 +8,7 @@ class Landing extends React.Component {
         return(
             <div className="text-white" style={{minHeight: '750px', backgroundColor:'black'}}>
                 <ScrollAnimation animateOnce={true} duration={3} delay={1100} animateIn="fadeIn">
-                    <h1 style={{textAlign: "center"}}><img style={{margin: '40px'}}src="images/J!Logo.png" /></h1>
+                    <h1 style={{textAlign: "center"}}><img style={{margin: '40px'}}src="../images/J!Logo.png" alt='jk logo'/></h1>
                 </ScrollAnimation>
                 <ScrollAnimation animateOnce={true} animateIn="fadeInLeft">
                     <h1 style={{textAlign: "center", fontSize: "80px"}}>Sound Design &</h1>
