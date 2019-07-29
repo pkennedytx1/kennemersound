@@ -3,9 +3,8 @@ import { MDBScrollspyBox, MDBScrollspyList, MDBScrollspyListItem, MDBScrollspyTe
 import './style.css';
 import ProgressBar from "react-scroll-progress-bar"
 
-class Navbar extends React.Component {
+function Navbar(props) {
     
-    render() {
         return(
             <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style={{padding: '20px 0 20px 0'}}>
                 <ProgressBar bgcolor="#00cc99"/>
@@ -19,7 +18,7 @@ class Navbar extends React.Component {
                     <li className="nav-item">
                     <a 
                         style={{color: 'black', fontWeight: 'bold'}} 
-                        className="nav-link" href="#Reel"
+                        className={props.reel} href="#Reel"
                     >REEL</a>
                     </li>
                     <li className="nav-item">
@@ -40,7 +39,7 @@ class Navbar extends React.Component {
                 
             </nav>
         )
-    }
+    
 }
 
 export default Navbar;

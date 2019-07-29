@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Modal, { ModalProvider, BaseModalBackground } from "styled-react-modal"
+import ScrollAnimation from 'react-animate-on-scroll'
 import './style.css'
 
 const StyledModal = Modal.styled`
