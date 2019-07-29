@@ -8,7 +8,7 @@ class Navbar extends React.Component {
     render() {
         return(
             <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style={{padding: '20px 0 20px 0'}}>
-                <ProgressBar/>
+                <ProgressBar bgcolor="#00cc99"/>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
