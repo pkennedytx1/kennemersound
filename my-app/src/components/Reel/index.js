@@ -13,9 +13,9 @@ class Reel extends React.Component {
 
     render() {
         return(
-            <div className='reelcontainer' style={{height: 'auto', padding: '30px', backgroundColor: this.state.bgColor}}>
-                <h1 style={{color: 'black'}} id='Reel' className='text-center'>Reel</h1>
-                <div className='player-wrapper'>
+            <div className='reelcontainer' style={{margin: 'auto', height: 'auto', padding: '30px', backgroundColor: this.state.bgColor}}>
+                <h1 style={{color: 'black', fontWeight: 'bold', padding: '30px 0 60px 0'}} id='Reel' className='text-center'>Reel</h1>
+                <div style={{margin: '0 auto 140px auto', maxWidth: '1200px'}} className='player-wrapper'>
                     <ReactPlayer
                         className='react-player'
                         url={'https://vimeo.com/279542470'}
@@ -26,6 +26,16 @@ class Reel extends React.Component {
                         }}
                         width='100%'
                         height='100%'
+                        onPause={() => {
+                            this.setState({
+                                bgColor: 'white'
+                            })
+                        }}
+                        onPlay={() => {
+                            this.setState({
+                                bgColor: 'black'
+                            })
+                        }}
                         onStart={() => {
                             this.setState({
                                 bgColor: 'black'
