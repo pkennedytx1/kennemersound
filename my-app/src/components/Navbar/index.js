@@ -1,45 +1,27 @@
 import React from 'react';
-import { MDBScrollspyBox, MDBScrollspyList, MDBScrollspyListItem, MDBScrollspyText, MDBTabContent } from "mdbreact";
-import './style.css';
 import ProgressBar from "react-scroll-progress-bar"
+import { Nav, Navbar } from 'react-bootstrap' 
+import './style.css';
 
-function Navbar(props) {
+function NavbarComponent(props) {
     
         return(
-            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style={{padding: '20px 0 20px 0'}}>
+            <Navbar sticky='top' collapseOnSelect expand="lg" bg="light" variant="light">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className='mx-auto' variant="pills" defaultActiveKey="/home">
+                        <Nav.Link href="#Reel">REEL</Nav.Link>
+                        <Nav.Link eventKey="link-1">PROJECTS</Nav.Link>                      
+                        <Nav.Link eventKey="link-2">ABOUT ME</Nav.Link>
+                        <Nav.Link eventKey="link-3">TESTIMONIALS</Nav.Link>
+                        <Nav.Link eventKey="link-4">CONTACT ME</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+                
                 <ProgressBar bgcolor="#00cc99"/>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarColor03">
-                
-                <ul class="nav nav-pills mx-auto" > 
-                    <li className="nav-item">
-                    <a 
-                        style={{color: 'black', fontWeight: 'bold'}} 
-                        className={props.reel} href="#Reel"
-                    >REEL</a>
-                    </li>
-                    <li className="nav-item">
-                    <a style={{color: 'black', fontWeight: 'bold'}} className="nav-link" href="#!">PROJECTS</a>
-                    </li>
-                    <li className="nav-item">
-                    <a style={{color: 'black', fontWeight: 'bold'}}className="nav-link" href="#!">ABOUT ME</a>
-                    </li>
-                    <li className="nav-item">
-                    <a style={{color: 'black', fontWeight: 'bold'}}className="nav-link" href="#!">TESTIMONIALS</a>
-                    </li>
-                    <li className="nav-item">
-                    <a style={{color: 'black', fontWeight: 'bold'}}className="nav-link" href="#!">CONTACT ME</a>
-                    </li>
-                </ul>
-                
-                </div>
-                
-            </nav>
+            </Navbar>
         )
     
 }
 
-export default Navbar;
+export default NavbarComponent;
